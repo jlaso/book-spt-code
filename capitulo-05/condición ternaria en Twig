@@ -1,0 +1,2 @@
+<input type="checkbox" value="1" name="test"
+       {{ checked == true ? 'checked="checked"' : '' }}/>

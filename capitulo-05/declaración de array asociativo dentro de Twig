@@ -1,0 +1,8 @@
+{% set paletaRaw = [ 'rosa', 'azul', 'blanca' ] %}
+
+{% set paletaAsoc = {
+   'rosa': '#FF4455',
+   'azul': '#4455FF',
+   'blanca': '#FFFFFF'
+}
+%}

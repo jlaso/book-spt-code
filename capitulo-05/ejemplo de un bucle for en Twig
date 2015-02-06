@@ -1,0 +1,24 @@
+{# ejemplo de un bucle for para un array #}
+
+{% set lista = ['casa','coche'] %}
+
+Existen estos elementos en la lista
+<ul>
+{% for item in lista %}
+    <li>{{ lista }}</li>
+{% enfor %}
+</ul>
+{# si la lista es un array asociativo #}
+{% set lista = {'casa': 10000, 'coche':5000 } %}
+Los valores de los objetos son:
+<table>
+    <thead>
+    <th>objeto</th>
+    <th>valor</th>
+    </thead>
+    {% for objeto,valor in lista %}
+    <tr>
+        <td>{{ objeto }}</td>
+        <td>{{ valor }}</td>
+    </tr>
+</table>

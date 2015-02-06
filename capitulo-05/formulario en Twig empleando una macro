@@ -1,0 +1,17 @@
+{% import 'macros.html.twig' as macros %}
+
+{%setdata={
+    'nombre': 'Joseluis',
+    'apellido': 'Laso',
+    'aficiones': 'Informática',
+    'libro': 'Programación PHP profesional con Slim,Paris y Twig'
+    }
+%}
+
+<ul>
+    {% for name,value in data %}
+    <li>
+        {{ macros.drawField(name,'text',value) }}
+    </li>
+    {% endfor %}
+</ul>

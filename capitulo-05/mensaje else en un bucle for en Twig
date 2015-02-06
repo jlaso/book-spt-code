@@ -1,0 +1,8 @@
+{% set lista = [] %}
+<ul>
+{% for item in lista %}
+    <li>{{ item }}</li>
+{% else %}
+    <li>No hay elementos</li>
+{% endfor %}
+</ul>

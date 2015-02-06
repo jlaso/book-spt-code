@@ -1,0 +1,13 @@
+{# ejemplo getters #}
+
+<pre>
+class SampleClass
+{
+    private $valor;
+    public function getValor()
+    {
+        return $this->valor;
+    }
+}
+</pre>
+Si a esta plantilla la llamamos con una instancia de SampleClass llamada sample el valor de sample.valor es {{ sample.valor }} o {{ sample.getValor() }}

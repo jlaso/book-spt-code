@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div id="main">
+        {% block main_block %}
+        {% endblock main_block %}
+    </div>
+    <div id="footer">
+        {% block footer %}
+            <p>Este es el footer de mi web</p>
+        {% endblock footer %}
+    </div>
+{% endblock content %}

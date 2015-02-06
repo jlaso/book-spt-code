@@ -1,0 +1,4 @@
+{% macro drawField(type, name, value) %}
+    <label for="{{ name }}">{{ name|capitalize }}</label>
+    <input type="{{ type }}" name="{{ name }}" value="{{ value }}"/>
+{% endmacro %}

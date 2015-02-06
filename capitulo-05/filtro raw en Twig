@@ -1,0 +1,4 @@
+{% set content = 'Esta <strong>letra</strong> está enfatizada' %}
+
+Este es el contenido de la variable content:
+{{ content|raw }}

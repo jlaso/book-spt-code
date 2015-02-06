@@ -1,0 +1,26 @@
+{# esto simula un objeto pasado a la plantilla #}
+
+{%setdata={
+    'nombre': 'Joseluis',
+    'apellido': 'Laso',
+    'aficiones': 'Informática',
+    'libro': 'Programación PHP profesional con Slim,Paris y Twig'
+    }
+%}
+<ul>
+    <li>
+        <label for="nombre">Nombre</label>
+        <input type="text" name="nombre" value="{{ data.nombre }}"/>
+    </li>
+    <li>
+        <label for="apellido">Apellido</label>
+        <input type="text" name="apellido" value="{{ data.apellido }}"/>
+    </li>
+    <li>
+        <label for="aficiones">Aficiones</label>
+        <input type="text" name="aficiones" value="{{ data.aficiones }}"/> </li>
+    <li>
+        <label for="libros">Libros</label>
+        <input type="text" name="libro" value="{{ data.libro }}"/>
+    </li>
+</ul>

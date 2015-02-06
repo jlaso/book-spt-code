@@ -1,0 +1,22 @@
+{# base.html.twig #}
+<html>
+<head>
+    <title>{{ title }}</title>
+    {% block stylesheets %}
+    <style type="text/css">
+        body{
+            font-family: Arial;
+        } </style>
+{% endblock stylesheets %}
+</head>
+<body>
+<div>
+    {% block content %}{% endblock content %}
+</div>
+</body>
+{% block javascripts %}
+    <script type="text/javascript">
+        alert('hola');
+    </script>
+{% endblock javascripts %}
+</html>
